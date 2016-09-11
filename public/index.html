@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="./css/aui.2.0.css">
+    <style type="text/css" media="screen">
+    	* {
+    		font-family: 'Microsoft Yahei';
+    	}
+    	.chatPage {
+    		display: none;
+    	}
+    	.logPage {
+    		background-color:#00FFFF;
+    		border-radius: .2rem;
+    	}
+    	.messageInputBar {
+    		display: none;
+    	}
+			.chatItem {
+
+			}
+    </style>
+	</head>
+	<body>
+		<header class="aui-bar aui-bar-nav">Chatting Room</header>
+		<div class="aui-content-padded">
+			<section class="logPage">
+				<div class="">
+					<ul class="logList"></ul>
+				</div>
+			</section>
+			<div class="chatPage">
+				<section class="aui-chat messageList">
+				</section>
+			</div>
+			<div class="loginPage">
+				<div>Please input your name</div>
+				<div class="aui-row">
+					<div class="aui-col-xs-9">
+						<input type="text" placeholder="Username" class="usernameInput">
+					</div>
+					<div class="aui-col-xs-3">
+						<div class="aui-btn aui-btn-primary addUser">Login</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="messageInputBar aui-bar aui-bar-tab aui-padded-l-15">
+			<div class="aui-bar-tab-item">
+				<input type="text" placeholder="Message" class="messageInput">
+			</div>
+			<div class="aui-bar-tab-item">
+				<div class="aui-btn aui-btn-primary sendMessage">Send</div>
+			</div>
+		</footer>
+	</body>
+	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="./js/main.js"></script>
+</html>
+
